@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Handshake TLDs Availability Plugin</title>
     <style>
@@ -10,10 +11,18 @@
             background-color: #fafafa;
         }
 
+        .logo {
+            max-width: 10%;
+            height: auto;
+            float: left;
+            border-radius: 11%;
+        }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         header {
@@ -23,12 +32,17 @@
             text-align: center;
         }
 
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
         main {
             background: white;
             margin: 15px 0;
             padding: 20px;
             border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -36,16 +50,32 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            header,
+            footer {
+                padding: 5px 0;
+            }
+
+            main {
+                padding: 10px;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
+            <img class="logo"
+                src="https://raw.githubusercontent.com/pencil-li/brandidentity/main/2023/02/web/basic/Pencil-Works-LLC-01B3x.png"
+                alt="Logo">
             <h1>Handshake TLDs Availability Plugin</h1>
         </div>
     </header>
@@ -53,7 +83,8 @@
     <div class="container">
         <main>
             <h2>About</h2>
-            <p>This plugin allows users to check the availability of Handshake blockchain TLDs using ChatGPT. It is hosted by dnser.pencil.li and api-opneai.dnser.</p>
+            <p>This plugin allows users to check the availability of Handshake blockchain TLDs using ChatGPT. It is
+                hosted by dnser.pencil.li and api-opneai.dnser.</p>
 
             <h2>Use the Plugin</h2>
             <p>Here you would typically include instructions or an interface for using the plugin.</p>
@@ -66,4 +97,5 @@
         </div>
     </footer>
 </body>
+
 </html>
